@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+
+  a {
+    color: white;
+    padding: 3px;
+    margin: 0;
+  }
+}
+
+#top-brands-link,
+#suggestions-link,
+#help-link,
+#account-link {
+  border-left: 1px solid white;
+}
+
+#account-link {
+  border-right: 1px solid white;
+}
+
+.main-search {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+
+  p {
+    flex-grow: 2;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: blue;
+  color: white;
+
+  > section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 20pt;
+    text-decoration: underline;
+    margin: 2px;
+  }
+
+  a {
+    margin: 2px;
+  }
+}
