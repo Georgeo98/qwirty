@@ -34,13 +34,86 @@ header {
   border-right: 1px solid white;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
 .main-search {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: 2rem;
 
-  p {
-    flex-grow: 2;
+  h1 {
+    margin-left: 3rem;
+    margin-right: 0;
+  }
+}
+
+.search-bar input {
+  width: 50vw;
+}
+
+.side-bar-and-product {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 4rem;
+
+  a {
+    background-color: blue;
+    color: white;
+    padding-right: 25px;
+  }
+}
+
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  gap: 1rem;
+}
+
+.product-card {
+  border: 1px solid black;
+  width: 175px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 25% auto 10%;
+
+  h3 {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  img {
+    grid-row: 2;
+    grid-column: 1 / span 3;
+  }
+
+  .product-description {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    font-size: 9pt;
+  }
+
+  .product-price {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  button {
+    grid-row: 4;
+    grid-column: 3;
   }
 }
 
